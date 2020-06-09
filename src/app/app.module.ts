@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { SearchPodcastComponent } from './search-podcast/search-podcast.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchPodcastComponent
+    SearchPodcastComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
