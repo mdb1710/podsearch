@@ -1,5 +1,5 @@
 <div class='login-form'>
-    <form clrForm [formGroup]="loginForm" [ngSubmit]="onSubmit()">
+    <form clrForm [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <fieldset>
             <clr-input-container>
             <label>Enter Username</label>
