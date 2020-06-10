@@ -1,1 +1,15 @@
-<p>login-page works!</p>
+<div class='login-form'>
+    <form clrForm [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <fieldset>
+            <clr-input-container>
+            <label>Enter Username</label>
+            <input type="text" clrInput placeholder="username" formControlName='username' />
+            </clr-input-container>
+            <clr-input-container>
+            <label>Enter Password</label>
+            <input type="text" clrInput placeholder="password" formControlName='password' />
+            </clr-input-container>
+            <button class="btn btn-primary" type="submit" [disabled]="!loginForm.valid" (click)="submit()">Submit</button>
+        </fieldset>
+    </form>
+</div>
